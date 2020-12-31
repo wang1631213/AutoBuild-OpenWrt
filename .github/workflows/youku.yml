@@ -5,7 +5,7 @@
 # Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
 
-name: Build_youku
+name: Build_youku_L1
 
 on: 
   release:
@@ -70,7 +70,7 @@ jobs:
         ./scripts/feeds update -a
         ./scripts/feeds install -a
         ./scripts/feeds install -a
-    - name: Configuration Customization - Build_youku
+    - name: Configuration Customization - Build_youku_L1
       env:
         CONFIG_FILE: 'youku.config'
       run: |
